@@ -128,6 +128,7 @@ export default {
                 }
               }
             }
+            /* eslint-enable */
           });
         }
         [].concat(_toConsumableArray(this.$refs.input.value)).reduce(function (memo, item) {
@@ -314,6 +315,7 @@ export default {
         });
         this.$emit('input', '', '');
       }
+      this.$emit('blur');
     },
     setNativeSelection: function setNativeSelection() {
       this.maskCore.selection = {
