@@ -291,6 +291,7 @@ export default {
         });
         this.$emit('input', '', '');
       }
+      this.$emit('blur');
     },
 
     setNativeSelection() {
